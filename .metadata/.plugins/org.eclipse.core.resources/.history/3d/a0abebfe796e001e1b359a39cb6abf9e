@@ -1,0 +1,14 @@
+package test;
+
+import model.ShainLogic;
+
+public class TestShainLogic {
+
+	public static void main(String[] args) {
+		ShainLogic shainlogic= new ShainLogic();
+		
+	
+
+	}
+
+}

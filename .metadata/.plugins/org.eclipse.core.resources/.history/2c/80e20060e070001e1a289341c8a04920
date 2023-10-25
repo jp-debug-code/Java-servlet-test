@@ -1,0 +1,85 @@
+package controller;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import dao.ShainDAO;
+
+/**
+ * Servlet implementation class update
+ */
+@WebServlet("/update")
+public class update extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public update() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
+		String id=request.getParameter("id");
+		String name=request.getParameter("name");
+		String retuire_flg_str= request.getParameter("retire_flg");//変数名を変えておく
+		String sqlDate_str=request.getParameter("sqlDate");//変数名を変えておく
+		String bu_id=request.getParameter("bu_id");
+		System.out.println("id:" + id);
+		System.out.println("id:" + retuire_flg_str);
+		System.out.println("id:" + name);
+		System.out.println("id:" + sqlDate_str);
+		System.out.println("id:" + bu_id);
+		ShainDAO shaindao =new ShainDAO();
+		
+		try {
+			//データの変換処理
+		 SimpleDateFormat dateformat =new SimpleDateFormat("yyyy-MM-dd");
+		 Date sqlDate =dateformat.parse(sqlDate_str);
+		 
+		
+		 int retuire_flg=Integer.parseInt( retuire_flg_str);
+		 //response.reset();
+		// request.getRequestDispatcher("/WEB-INF/update.jsp").forward(request, response);
+	
+		 boolean su =shaindao.getInsert(id, name, sqlDate,retuire_flg, bu_id);//insertに入れる
+			//boolean su =shaindao.getInsert(id, name, sqlDate, retuire_flg, bu_id);
+			if(su) {
+				
+				request.getRequestDispatcher("/WEB-INF/su.jsp").forward(request, response);
+				// response.sendRedirect("/WEB-INF/su.jsp");
+			}
+		
+		} catch (Exception e) {
+			request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
+			
+			e.printStackTrace();
+		}
+	
+		
+		request.getRequestDispatcher("/WEB-INF/update.jsp").forward(request, response);
+		}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

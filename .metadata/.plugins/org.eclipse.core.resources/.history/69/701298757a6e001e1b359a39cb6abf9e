@@ -1,0 +1,28 @@
+package test;
+
+import java.sql.SQLException;
+
+import beans.ShainBean;
+import model.ShainLogic;
+
+public class TestShainLogic {
+
+	public static void main(String[] args) {
+		ShainLogic shainLogic= new ShainLogic();
+		try {
+			ShainBean shainBean = new shainLogic.getShain("0001");
+			//社員Beanのテスト結果（値を取得し、表示する）
+			System.out.println("社員ID：" + shainBean.getShain_id());
+			System.out.println("社員名：" + shainBean.getShain_name());
+			System.out.println("部署名：" + shainBean.getBu_name());
+			System.out.println("入社日：" + shainBean.getEnter_date());
+		} catch (SQLException | ClassNotFoundException e) {
+			
+		}
+		
+		
+	
+
+	}
+
+}
