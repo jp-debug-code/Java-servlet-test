@@ -1,0 +1,14 @@
+127.0.0.1 - - [27/Oct/2023:22:43:24 +0900] "GET / HTTP/1.1" 404 895
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:43:30 +0900] "GET /servlet/chapter5/total HTTP/1.1" 404 925
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:10 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:18 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:20 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:21 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:21 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:44:21 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:09 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:10 +0900] "GET /servlet/chapter5/total.html HTTP/1.1" 404 930
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:18 +0900] "GET /servlet/chapter5/greeting2.html HTTP/1.1" 404 934
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:21 +0900] "GET /servlet/chapter5/greeting2.html HTTP/1.1" 404 934
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:35 +0900] "GET /servlet/chapter5/greeting?user=Kinnjiroa%40gmail.com HTTP/1.1" 404 928
+0:0:0:0:0:0:0:1 - - [27/Oct/2023:22:45:37 +0900] "GET /servlet/chapter5/greeting.html HTTP/1.1" 404 933

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--	action=送信先（サーブレットのURL）-->
+<!--	method=送信時のHTTPリクエスト-->
+	 <form action="greeting" method="get">
+
+    <input type="text" name="user">
+    <input type="submit" value="確定">
+    </form>
+
+</body>
+</html>
