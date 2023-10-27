@@ -4,4 +4,5 @@
   <module moduleId="org.eclipse.jst.jee.server:jsp_test" serverId="localhost の Tomcat9 (Java11)"/>
   <module moduleId="org.eclipse.jst.jee.server:jj_mysql" serverId="localhost での Tomcat9 (Java11) (2)"/>
   <module moduleId="org.eclipse.jst.jee.server:jsp_servlet" serverId="localhost の Tomcat9 (Java11)"/>
+  <module moduleId="org.eclipse.jst.jee.server:servlet" serverId="localhost での Tomcat9 (Java11) (2)"/>
 </modules>

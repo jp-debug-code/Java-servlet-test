@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -31,7 +32,10 @@ public class hello extends HttpServlet {
 		request.getRequestDispatcher("WEB-INF/hello.jsp").forward(request, response);
 		System.out.println(new java.util.Date());
 		System.out.println("動いてる");
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/plain; charset=UTF-8");
+		PrintWriter out =response.getWriter();
+		out.println(out);
 	}
 
 	/**

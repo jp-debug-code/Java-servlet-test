@@ -21,8 +21,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       </p>
     </form>
     <a href="./update">登録画面へ</a>
-    <form action="update">
-    <button type="submit"></button>
-    </form>
+    
+    
   </body>
 </html>

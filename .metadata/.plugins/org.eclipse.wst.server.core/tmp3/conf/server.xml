@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\pleiades\2023-06\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\pleiades\2023-06\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\jj_mysql" path="/jj_mysql" reloadable="false" source="org.eclipse.jst.jee.server:jj_mysql"/></Host>
+      <Context docBase="C:\pleiades\2023-06\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\pleiades\2023-06\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\jj_mysql" path="/jj_mysql" reloadable="false" source="org.eclipse.jst.jee.server:jj_mysql"/><Context docBase="C:\pleiades\2023-06\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp3\wtpwebapps\servlet" path="/servlet" reloadable="true" source="org.eclipse.jst.jee.server:servlet"/></Host>
     </Engine>
   </Service>
 </Server>
