@@ -20,7 +20,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
         <button type="submit">検索する</button>
       </p>
     </form>
-    <a href="./update">登録画面へ</a>
+    <a href="update1/update.html">登録画面へ</a>
     
     
   </body>

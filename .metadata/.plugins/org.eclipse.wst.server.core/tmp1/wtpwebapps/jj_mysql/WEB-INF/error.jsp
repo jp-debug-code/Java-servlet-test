@@ -14,6 +14,6 @@ uri="http://java.sun.com/jsp/jstl/core"%>
     <h1>エラーページ</h1>
     <p>            
 <c:out value="${error_msg}" /></p>
-    <a href="javascript:history.back();">トップページに戻る</a>
+    <a href="/jj_mysql/index">トップページに戻る</a>
   </body>
 </html>

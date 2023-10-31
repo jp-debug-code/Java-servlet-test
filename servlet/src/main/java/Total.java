@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Total
  */
-@WebServlet("/chapter5/total")
+@WebServlet("/chapter5/total.html")
 public class Total extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
