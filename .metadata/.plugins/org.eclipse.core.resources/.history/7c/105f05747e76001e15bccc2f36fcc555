@@ -1,0 +1,7 @@
+
+
+public class Snippet {
+	public static void main(String[] args) {
+		ボタンを押す際に文字を押して反応できるようにしたい
+	}
+}

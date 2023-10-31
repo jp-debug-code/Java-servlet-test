@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>購入数を選択して下さい</p>
+        <form action="all" method="post">
+            
+            <select name="select" id="select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        
+        </select>個
+        <p>支払方法を選んでください</p>
+        <label for="card">
+        <input type="radio" name="payment" id="card" value="カード">カード
+    </label>
+    <label for="payment">
+        <input type="radio" name="payment" id="payment" value="現金">現金
+    </label>
+    <label for="body">
+        <input type="radio" name="payment"  id="body" value="body">身体
+    </label>
+    <p>他に欲しい商品はありますか</p>
+<label for="densha">
+<input type="checkbox" id="densha" name="want-box" value="電車"> 電車
+</label>
+<label for="kuruma">
+<input type="checkbox" id="kuruma" name="want-box" value="車"> 車
+</label>
+<label for="unti">
+<input type="checkbox" id="unti" name="want-box" value="うんこ"> うんこ
+</label>
+<label for="tinko">
+<input type="checkbox" id="tinko" name="want-box" value="ちんこ"> ちんこ
+</label>
+
+<p>おすすめ商品のメール受信を希望されますか？</p>
+<label for="check">
+<input type="checkbox" id="check" name="check"> おすすめ商品のメールを受け取る
+</label>
+<p></p>
+
+<input type="submit" value="確定">
+   
+    </form>
+    
+</body>
+</html>

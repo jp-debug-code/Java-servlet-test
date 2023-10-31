@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>購入数を選択して下さい</p>
+    <form action="select" method="post">
+        
+        <select name="select" id="select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    
+    </select>個
+    <p>支払方法を選んでください</p>
+    <label for="card">
+    <input type="radio" name="payment" id="card" value="card">カード
+</label>
+<label for="payment">
+    <input type="radio" name="payment" id="payment" value="payment">現金
+</label>
+<label for="body">
+    <input type="radio" name="payment"  id="body" value="body">身体
+</label>
+<p>感想をお聞かせください</p>
+<textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+<p>おすすめ商品のメール受診を希望されますか？</p>
+<label for="check">
+<input type="checkbox" id="check"> おすすめ商品のメールを受け取る
+</label>
+<input type="submit" value="確定">
+</form>
+    
+</body>
+</html>
